@@ -10,7 +10,7 @@ function App() {
     <div className="App">
       <Hf typeHF={true}/>
       <UserAuth />
-      <Hf typeHF={false}/>
+      <Hf typeHF={false} />
     </div>
   );
 }
