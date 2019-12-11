@@ -11,6 +11,10 @@ import "./styles.scss";
 
 const store = createStore(flightReducer);
 
+store.subscribe(() => {
+  console.log(store.getState());
+});
+
 function App() {
   return (
     <div className="App">
