@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Data from "./../Modeldata/Data";
+import Data from "./../DataHub/Data";
 
 class AdminComp extends Component {
   showData() {
