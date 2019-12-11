@@ -12,7 +12,7 @@ var Data = {
       vacateSeats: "4",
       from: "Delhi",
       to: "Banglore",
-      pasangers: [
+      passengers: [
         {
           name: "Raj",
           age: "30",
@@ -111,7 +111,7 @@ var Data = {
       vacateSeats: "7",
       from: "Delhi",
       to: "Mumbai",
-      pasangers: [
+      passengers: [
         {
           name: "Shalu",
           age: "24",
@@ -168,7 +168,7 @@ var Data = {
       vacateSeats: "8",
       from: "Delhi",
       to: "Indore",
-      pasangers: [
+      passengers: [
         {
           name: "Subham",
           age: "30",
