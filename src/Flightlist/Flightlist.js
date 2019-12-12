@@ -5,7 +5,7 @@ const FlightList = props => {
   const flightObj = props.flightList;
 
   const showPessangerList = flightNo => {
-    props.history.push(`/pessenger-list?flightNo=${flightNo}`);
+    props.history.push(`/passenger-list?flightNo=${flightNo}`);
   };
 
   const elem = flightObj.map(flights => {

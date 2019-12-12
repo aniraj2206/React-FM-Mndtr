@@ -3,7 +3,14 @@ import { connect } from "react-redux";
 
 class Passengerslist extends Component {
   render() {
-    return <></>;
+    const queryParam = this.props.location.search;
+    let flightNumber = queryParam.split("=")[1];
+    console.log(flightNumber);
+    return (
+      <>
+        <span>Passanger List Rendred</span>
+      </>
+    );
   }
 }
 
