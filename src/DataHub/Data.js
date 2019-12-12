@@ -21,7 +21,7 @@ var Data = {
           passport: "CVD2345HT",
           dob: "13/03/1990",
           seatNumber: "D1",
-          ancillaryServices: "No",
+          ancillaryServices: "Yes",
           contactNumber: "8978654565",
           specialService: {
             wheelchair: "No",
@@ -36,7 +36,7 @@ var Data = {
           passport: "FRTE7654MY",
           dob: "23/06/1996",
           seatNumber: "D4",
-          ancillaryServices: "No",
+          ancillaryServices: "Yes",
           contactNumber: "7656456588",
           specialService: {
             wheelchair: "No",
@@ -99,7 +99,7 @@ var Data = {
           ancillaryServices: "No",
           contactNumber: "8978676545",
           specialService: {
-            wheelchair: "no",
+            wheelchair: "No",
             food: "No"
           }
         }
@@ -126,7 +126,7 @@ var Data = {
           passport: "",
           dob: "22/08/1997",
           seatNumber: "B3",
-          ancillaryServices: "No",
+          ancillaryServices: "Yes",
           contactNumber: "7867656565",
           specialService: {
             wheelchair: "No",
