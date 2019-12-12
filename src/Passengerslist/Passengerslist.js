@@ -5,7 +5,17 @@ class Passengerslist extends Component {
   render() {
     const queryParam = this.props.location.search;
     let flightNumber = queryParam.split("=")[1];
-    console.log(flightNumber);
+
+    const flightDetails = this.props.flightData;
+    const thisFlightData = [];
+
+    flightDetails.forEach(val => {
+      if (val.flightNumber === flightNumber) {
+        thisFlightData.push(val);
+      }
+    });
+    console.table(thisFlightData);
+
     return (
       <>
         <span>Passanger List Rendred</span>
