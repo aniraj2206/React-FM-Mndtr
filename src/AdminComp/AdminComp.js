@@ -1,19 +1,24 @@
 import React, { Component } from "react";
-import Data from "./../DataHub/Data";
 import { connect } from "react-redux";
+import FlightList from "./../Flightlist/Flightlist";
 
 class AdminComp extends Component {
-  showData() {
-    console.log(Data);
-  }
   render() {
     return (
       <div>
-        <p onClick={this.props.addPassengers}> Admin services </p>
+        <div className="flightList">
+          <FlightList flightList={this.props.flightData} />
+        </div>
       </div>
     );
   }
 }
+
+const mapStateToProps = state => {
+  return {
+    flightData: state.flightData
+  };
+};
 
 const mapDispatchToProp = dispatch => {
   const payLoad = { name: "Tanu" };
@@ -23,6 +28,6 @@ const mapDispatchToProp = dispatch => {
 };
 
 export default connect(
-  null,
+  mapStateToProps,
   mapDispatchToProp
 )(AdminComp);

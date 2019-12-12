@@ -1,6 +1,6 @@
 import Data from "../.././DataHub/Data";
 
-const initialState = Data.flightData;
+const initialState = Data;
 
 const flightReducer = (state = initialState, action) => {
   if (action.type === "ADD_PASSENGERS") {
