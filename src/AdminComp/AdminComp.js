@@ -24,14 +24,4 @@ const mapStateToProps = state => {
   };
 };
 
-const mapDispatchToProp = dispatch => {
-  const payLoad = { name: "Tanu" };
-  return {
-    addPassengers: () => dispatch({ type: "ADD_PASSENGERS", payLoad })
-  };
-};
-
-export default connect(
-  mapStateToProps,
-  mapDispatchToProp
-)(AdminComp);
+export default connect(mapStateToProps)(AdminComp);
