@@ -1,8 +1,8 @@
 var Data = {
   flightData: [
     {
-      flightName: "IRFLY01",
-      flightNumber: "AniRaj-Fly",
+      flightNumber: "IRFLY01",
+      flightName: "AniRaj-Fly",
       flightTime: {
         depart: "08:30",
         arrival: "10:30"
@@ -100,8 +100,8 @@ var Data = {
       ]
     },
     {
-      flightName: "IRFLY02",
-      flightNumber: "AniRaj-Fly",
+      flightNumber: "IRFLY02",
+      flightName: "AniRaj-Fly",
       flightTime: {
         depart: "13:30",
         arrival: "15:30"
@@ -157,8 +157,8 @@ var Data = {
       ]
     },
     {
-      flightName: "IRFLY03",
-      flightNumber: "AniRaj-Fly",
+      flightNumber: "IRFLY03",
+      flightName: "AniRaj-Fly",
       flightTime: {
         depart: "14:30",
         arrival: "15:00"

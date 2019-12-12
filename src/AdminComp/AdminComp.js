@@ -4,10 +4,14 @@ import FlightList from "./../Flightlist/Flightlist";
 
 class AdminComp extends Component {
   render() {
+    console.log(this.props.history);
     return (
       <div>
         <div className="flightList">
-          <FlightList flightList={this.props.flightData} />
+          <FlightList
+            flightList={this.props.flightData}
+            history={this.props.history}
+          />
         </div>
       </div>
     );
