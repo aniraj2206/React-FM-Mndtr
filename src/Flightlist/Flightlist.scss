@@ -1,0 +1,30 @@
+.flCont {
+  width: 65%;
+  box-sizing: border-box;
+  border: 2px solid #627f8c;
+  margin: 10px auto;
+  background-color: mintcream;
+  padding: 10px 15px;
+  text-align: left;
+  font-family: monospace;
+  border-radius: 4px;
+  max-width: 350px;
+}
+.flName, .flToFrom, .flPesDet {
+  margin-bottom: 5px;
+}
+.flName {
+  font-size: 20px;
+  font-weight: 600;
+}
+.flNavToPessBtn {
+  color: white;
+  background-color: #3F51B5;
+  width: 130px;
+  height: 30px;
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
