@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
+import "./Passengerslist.scss";
 
 class Passengerslist extends Component {
   render() {
@@ -20,14 +21,31 @@ class Passengerslist extends Component {
     const passengersDet = passengersList.map(passengers => {
       return (
         <div className="flPassList">
-          <span>{passengers.name}</span>
+          <div className="pName">
+            <label>Name</label> : {passengers.name}
+          </div>
+          <div className="pGender">
+            <label>Gender</label> : {passengers.gender}
+          </div>
+          <div className="pSeat">
+            <label>Seat No</label> : {passengers.seatNumber}
+          </div>
+          <div className="pContact">
+            <label>Contact</label> : {passengers.contactNumber}
+          </div>
+          <div className="pCare">
+            <label>Special Care</label> : {passengers.ancillaryServices}
+          </div>
+          <div className="updateBtn">
+            <button className="updateButton">Update</button>
+          </div>
         </div>
       );
     });
 
     return (
       <div>
-        <span>{this.passengersDet}</span>
+        <div className="flPassListCont">{passengersDet}</div>
       </div>
     );
   }

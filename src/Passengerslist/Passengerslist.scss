@@ -1,3 +1,32 @@
-.class {
-  color: blue;
+.flPassListCont {
+  width: 80%;
+  margin: 0 auto;
+}
+.flPassList {
+    display: inline-block;
+    text-align: left;
+    max-width: 230px;
+    width: 70%;
+    padding: 10px 5px;
+    margin: 5px;
+    box-sizing: border-box;
+    border: 2px solid #00BCD4;
+    border-radius: 4px;
+    font-size: 13px;
+    font-family: monospace;
+}
+.flPassList label {
+  font-size: 14px;
+  font-weight: 600;
+}
+.updateButton {
+    margin-top: 10px;
+    color: #Fff;
+    background-color: #2196F3;
+    height: 26px;
+    font-size: 12px;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
 }
