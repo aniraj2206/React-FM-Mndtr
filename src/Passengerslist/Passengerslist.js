@@ -16,10 +16,19 @@ class Passengerslist extends Component {
     });
     console.table(thisFlightData);
 
+    const passengersList = thisFlightData[0].passengers;
+    const passengersDet = passengersList.map(passengers => {
+      return (
+        <div className="flPassList">
+          <span>{passengers.name}</span>
+        </div>
+      );
+    });
+
     return (
-      <>
-        <span>Passanger List Rendred</span>
-      </>
+      <div>
+        <span>{this.passengersDet}</span>
+      </div>
     );
   }
 }

@@ -44,7 +44,12 @@ const FlightList = props => {
       </div>
     );
   });
-  return <>{elem}</>;
+  return (
+    <>
+      <div className="flHeading">Todays Flight Details</div>
+      {elem}
+    </>
+  );
 };
 
 export default FlightList;
