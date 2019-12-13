@@ -1,4 +1,5 @@
 import React from "react";
+import "./Seatlayout.scss";
 
 const Seatlayout = props => {
   const pList = props.passengersList;

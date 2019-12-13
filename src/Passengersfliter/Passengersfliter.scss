@@ -1,0 +1,21 @@
+.filterCont {
+  width: 80%;
+  margin: 10px auto;
+  font-size: 16px;
+  font-family: monospace;
+}
+.filterList span {
+  text-decoration: underline;
+  margin: 2px 10px;
+  color: crimson;
+  cursor: pointer;
+}
+.filterList label {
+    color: #3F51B5;
+    font-size: 18px;
+}
+.filterList {
+  border-bottom: 2px solid;
+  border-color: cornflowerblue;
+  padding-bottom: 5px;
+}

@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import Seatlayout from "./../Seatlayout/Seatlayout";
+import Passengersfliter from "./../Passengersfliter/Passengersfliter";
 import "./Passengerslist.scss";
 
 class Passengerslist extends Component {
@@ -16,6 +17,10 @@ class Passengerslist extends Component {
         thisFlightData.push(val);
       }
     });
+
+    const updatePassengersList = filterKeyword => {
+      console.log(filterKeyword);
+    };
     console.table(thisFlightData);
 
     const passengersList = thisFlightData[0].passengers;
@@ -50,6 +55,7 @@ class Passengerslist extends Component {
           passengersList={passengersList}
           totalSeats={thisFlightData[0].totalSeats}
         />
+        <Passengersfliter filterPessengers={updatePassengersList} />
         <div className="flPassListCont">{passengersDet}</div>
       </div>
     );
