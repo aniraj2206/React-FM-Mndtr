@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
+import Seatlayout from "./../Seatlayout/Seatlayout";
 import "./Passengerslist.scss";
 
 class Passengerslist extends Component {
@@ -45,6 +46,10 @@ class Passengerslist extends Component {
 
     return (
       <div>
+        <Seatlayout
+          passengersList={passengersList}
+          totalseats={thisFlightData[0].totalSeats}
+        />
         <div className="flPassListCont">{passengersDet}</div>
       </div>
     );
