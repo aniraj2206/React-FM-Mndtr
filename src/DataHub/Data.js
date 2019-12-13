@@ -63,7 +63,7 @@ var Data = {
         },
         {
           passengersId: "IR0104",
-          name: "Sheela",
+          name: "Shunayna",
           age: "23",
           gender: "Female",
           checkedIn: "No",
