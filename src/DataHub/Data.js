@@ -132,7 +132,7 @@ var Data = {
           checkedIn: "No",
           passport: "",
           dob: "22/08/1997",
-          seatNumber: "B3",
+          seatNumber: "D3",
           ancillaryServices: "Yes",
           contactNumber: "7867656565",
           specialService: {
@@ -148,7 +148,7 @@ var Data = {
           checkedIn: "No",
           passport: "TYUHJ6756OP",
           dob: "12/08/1960",
-          seatNumber: "B5",
+          seatNumber: "D5",
           ancillaryServices: "Yes",
           contactNumber: "7878989809",
           specialService: {
@@ -164,7 +164,7 @@ var Data = {
           checkedIn: "No",
           passport: "",
           dob: "12/09/1994",
-          seatNumber: "B8",
+          seatNumber: "D8",
           ancillaryServices: "No",
           contactNumber: "3454657687",
           specialService: {
@@ -195,7 +195,7 @@ var Data = {
           checkedIn: "No",
           passport: "",
           dob: "02/12/1990",
-          seatNumber: "C2",
+          seatNumber: "D2",
           ancillaryServices: "No",
           contactNumber: "8978987867",
           specialService: {
@@ -211,7 +211,7 @@ var Data = {
           checkedIn: "No",
           passport: "HTYU6576TY",
           dob: "20/09/1994",
-          seatNumber: "C7",
+          seatNumber: "D7",
           ancillaryServices: "No",
           contactNumber: "",
           specialService: {

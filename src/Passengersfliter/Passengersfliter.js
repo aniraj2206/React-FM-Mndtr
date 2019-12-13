@@ -11,6 +11,9 @@ const Passengersfliter = props => {
     <div className="filterCont">
       <div className="filterList">
         <label>Filters: </label>
+        <span onClick={() => doFilter("ALL")} className="byAll">
+          All
+        </span>
         <span onClick={() => doFilter("CHK_IN")} className="byCheckedIn">
           Checked-In
         </span>
