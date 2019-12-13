@@ -48,7 +48,7 @@ class Passengerslist extends Component {
       <div>
         <Seatlayout
           passengersList={passengersList}
-          totalseats={thisFlightData[0].totalSeats}
+          totalSeats={thisFlightData[0].totalSeats}
         />
         <div className="flPassListCont">{passengersDet}</div>
       </div>
