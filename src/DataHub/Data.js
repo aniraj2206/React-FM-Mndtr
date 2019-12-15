@@ -1,4 +1,4 @@
-var Data = {
+export let Data = {
   flightData: [
     {
       flightNumber: "IRFLY01",
@@ -63,7 +63,7 @@ var Data = {
         },
         {
           passengersId: "IR0104",
-          name: "Shunayna",
+          name: "Sunayna",
           age: "23",
           gender: "Female",
           checkedIn: "No",

@@ -2,7 +2,12 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import FlightList from "./../Flightlist/Flightlist";
 
+import { getFlights } from "./../store/action/FlightAction";
+
 class AdminComp extends Component {
+  componentDidMount() {
+    this.props.getFlights();
+  }
   render() {
     console.log(this.props.history);
     return (
@@ -20,8 +25,19 @@ class AdminComp extends Component {
 
 const mapStateToProps = state => {
   return {
-    flightData: state.flightData
+    flightData: state.passengers
   };
 };
 
-export default connect(mapStateToProps)(AdminComp);
+const mapReducerToProps = dispatch => {
+  return {
+    getFlights: () => {
+      dispatch(getFlights());
+    }
+  };
+};
+
+export default connect(
+  mapStateToProps,
+  mapReducerToProps
+)(AdminComp);

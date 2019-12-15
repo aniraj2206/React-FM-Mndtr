@@ -4,6 +4,8 @@ import Seatlayout from "./../Seatlayout/Seatlayout";
 import Passengersfliter from "./../Passengersfliter/Passengersfliter";
 import "./Passengerslist.scss";
 
+import { getFlights } from "./../store/action/FlightAction";
+
 class Passengerslist extends Component {
   render() {
     const queryParam = this.props.location.search;
@@ -62,11 +64,12 @@ class Passengerslist extends Component {
   }
 }
 
-const mapStateToProps = state => {
+/* const mapStateToProps = state => {
   return {
     flightData: state.flightData
   };
 };
+
 
 const mapDispatchToProp = dispatch => {
   const payLoad = { name: "Tanu" };
@@ -78,4 +81,23 @@ const mapDispatchToProp = dispatch => {
 export default connect(
   mapStateToProps,
   mapDispatchToProp
+)(Passengerslist); */
+
+const mapStateToProps = state => {
+  return {
+    flightData: state.passengers
+  };
+};
+
+const mapReducerToProps = dispatch => {
+  return {
+    getFlights: () => {
+      dispatch(getFlights());
+    }
+  };
+};
+
+export default connect(
+  mapStateToProps,
+  mapReducerToProps
 )(Passengerslist);
