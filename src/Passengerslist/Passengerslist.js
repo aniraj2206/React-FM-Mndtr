@@ -4,9 +4,15 @@ import Seatlayout from "./../Seatlayout/Seatlayout";
 import Passengersfliter from "./../Passengersfliter/Passengersfliter";
 import "./Passengerslist.scss";
 
-import { getFlights } from "./../store/action/FlightAction";
+import {
+  getFlights,
+  updatePassengerList
+} from "./../store/action/FlightAction";
 
 class Passengerslist extends Component {
+  componentDidMount() {
+    this.props.getFlights();
+  }
   render() {
     const queryParam = this.props.location.search;
     let flightNumber = queryParam.split("=")[1];
@@ -22,10 +28,13 @@ class Passengerslist extends Component {
 
     const updatePassengersList = filterKeyword => {
       console.log(filterKeyword);
+      this.props.updatePassengerList(filterKeyword);
     };
     console.table(thisFlightData);
 
-    const passengersList = thisFlightData[0].passengers;
+    const passengersList = this.props.flightData.length
+      ? this.props.flightData[0].passengers
+      : [];
     const passengersDet = passengersList.map(passengers => {
       return (
         <div className="flPassList">
@@ -55,7 +64,7 @@ class Passengerslist extends Component {
       <div>
         <Seatlayout
           passengersList={passengersList}
-          totalSeats={thisFlightData[0].totalSeats}
+          totalSeats={this.props.flightData[0].totalSeats}
         />
         <Passengersfliter filterPessengers={updatePassengersList} />
         <div className="flPassListCont">{passengersDet}</div>
@@ -93,6 +102,9 @@ const mapReducerToProps = dispatch => {
   return {
     getFlights: () => {
       dispatch(getFlights());
+    },
+    updatePassengerList: keywords => {
+      dispatch(updatePassengerList(keywords));
     }
   };
 };

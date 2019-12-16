@@ -20,6 +20,13 @@ const flightReducer = (state = initialState, action) => {
       passengers: sampVar
     };
   }
+  if (action.type === "UPDATE_PASSENGERS") {
+    const sampVar = action.payLoad;
+    return {
+      ...state,
+      passengers: sampVar
+    };
+  }
   return state;
 };
 
